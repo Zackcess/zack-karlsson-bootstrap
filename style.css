@@ -1,9 +1,34 @@
 
 /*Egen css*/
-.container{
-
+.container-fluid{
+    background-color: navy;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
+.start{
+    width: 25%;
+    
+}
+
+
+
 
 .btn{
     background-color: rgba(17, 219, 255, 0.966);
+}
+
+.btn-primary{
+    background-color: #000;
+    border: 10px solid #182;
+}
+.btn:hover{
+    background: lightblue;
+}
+.card{
+    background: rgb(8, 247, 255);
+    border: 15px solid coral;
+}
+
+.f{
+    width:50%
 }
