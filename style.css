@@ -1,18 +1,29 @@
-
+*{
+overflow-x:hidden;
+}
 /*Egen css*/
 .container-fluid{
-    background-color: navy;
-    text-align: center;
+    background-color: grey;
     font-family: 'Courier New', Courier, monospace;
 }
-.start{
-    width: 25%;
-    
+.topstart{
+    text-align:center;
+
 }
-
-
-
-
+.start{
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+}
+.html{
+    font-size: 20px;
+}
+.css{
+    font-size:20px;
+}
+.element_ptxt{
+    font-size:20px;
+}
 .btn{
     background-color: rgba(17, 219, 255, 0.966);
 }
