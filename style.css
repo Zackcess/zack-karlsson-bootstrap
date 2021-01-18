@@ -3,20 +3,20 @@ overflow-x:hidden;
 }
 /*Egen css*/
 .container-fluid{
-    background-color: grey;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: grey;/*Generell backgrund färg*/
+    font-family: 'Courier New', Courier, monospace;/*font*/
 }
 .topstart{
-    text-align:center;
+    text-align:center;/* enkel align*/
 
 }
-.start{
+.start{/*små design dix för snyggare layout + width + rund kanter + färg*/
     width: 50%;
     border-radius: 10px;
     color: white;
 }
 .html{
-    font-size: 20px;
+    font-size: 20px; /*Font strlk*/
 }
 .css{
     font-size:20px;
