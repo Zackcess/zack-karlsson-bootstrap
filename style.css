@@ -5,6 +5,7 @@ overflow-x:hidden;
 .container-fluid{
     background-color: grey;/*Generell backgrund färg*/
     font-family: 'Courier New', Courier, monospace;/*font*/
+    font-size:20px;/*storlek text(Var svårt o läds annars)*/
 }
 .topstart{
     text-align:center;/* enkel align*/
@@ -16,25 +17,22 @@ overflow-x:hidden;
     color: white;
 }
 .html{
-    font-size: 20px; /*Font strlk*/
+    margin-right:15px;/*Små justeringar var inte nöjd med placering*/
+    margin-left: 17px;
 }
-.css{
-    font-size:20px;
-}
-.element_ptxt{
-    font-size:20px;
+
+.element_ptxt{/*bredd*/
     width: 500px;
 }
 
 .id2{
-    width:500px;
+    width:500px; /*bredd*/
 }
 
 
 .toppic{
     width:50%
 }
-.class_ptxt{
-    font-size:20px;
+.class_ptxt{/*bredd*/
     width: 500px;
 }

@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!--Laddar först in bootstrap och sen min egen css-->
-    <link rel="stylesheet" href="bootstrap.css"> <!--Länk till bootstrap, får tillgång till all den kod först-->
-    <link rel="stylesheet" href="style.css"><!--Länk till egen css som kommer efter bootstrap och gör att den kommer efter-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webbbegrepp</title>
-</head>
-<body>
-    <div class="container-fluid text-monospace"><!--Container fluid sätter på margin, width och padding. Addreserar en ny font-->
-    
-   
-        <div class="container-fluid align-items-center topstart" style="background-color: rgb(0, 255, 136);"> <!--använder samma container + aling för centrering + lägger till färg + adderar ord "topstart" så man kan manipulera i css-->
-            <h1>Webbutveckling 1</h1> <!--Enkel tag för rubrik-->
-            <div class="container start" style="background-color: black;"><!--Använder ytterligare en container som attribuerar width 540px + ändrar färg-->
-                <h1>Begreppsförklaring</h1>
-            </div>
-        </div>
-        
-        <div class="d-flex justify-content:between"> <!--D-flex fixar flexbox(display flex) + justerar innehållet med space-between-->
-            <img src="html.jpg" class="mr-auto img-fluid toppic" alt="Responsive image, html bild"><!--Bild + margin + height och width + specifierar namn till css + beskriver vad det är-->
-            <img src="css.png" class="mr-auto img-fluid toppic" alt="Responsive image, css bilds">
-        </div>
-        <div class="d-flex justify-content-around html/css"><!--Displayflex + justerar med spacearound + specifierar-->
-            <p class="html">Det är grundstrukturen för alla webbsidor du ser på nätet. Alltså layouten såsom styckindelning och rubriker. </p><!--P-tag för informationen + specifierar-->
-            <p class ="css">Det är det som gör att just din sidan ser annorlunda ut. Alltså typsnitt, storlek och hemsidans färger.</p>
-        </div>
-        <hr> <!--break line för o byta ämne-->
-        <div class="d-flex justify-content-start element"><!--Displayflex + Justerar till vänster + specifierar-->
-            <h1>Element:</h1>
-        </div>
-            <div class="d-flex justify-content-start element2">
-                <p class="element_ptxt">En del av ett Htmldokument, som börjar på en startag och slutar på en sluttag. Exempelvis h1,img,p.</p>
-                <img src="element.png" class="mr-auto img-fluid elementpng" alt="Respinsive image">
-             </div>
-        <hr>
-        <div class="d-flex justify-content-start id">
-            <h1>ID:</h1>
-        
-        </div>
-            <div class="d-flex justify-content-start id2">
-                <p class="id_ptxt">Specifierar ett unikt id för ett element och kan bara ha ett per element. Detta ID kan inte användas på flera element. Det måste också:</p>
-            </div>
-            <div class="list-group"><!--Lista-->
-                <ol>Innehålla en bokstav</ol><!--Ordnad lista-->
-                <ol>Inga mellanslag</ol>
-            </div>
-        
-        <hr>
-        <div class="d-flex justify-content-start class-1">
-            <h1>Class:</h1>
-        </div>
-        <div class="d-flex justify-content-start class-2">
-            <p class="class_ptxt">Klass atributet specifierar en eller flera "klassnamn" för ett element. Det används mestadels för att kunna länka med klassen i ett stylesheet.</p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start meta-1">
-            <h1>Meta:</h1>
-        </div>
-        <div class="d-flex justify-content-start meta-2">
-            <p class="meta_ptxt">Meta taggen i Html är information om data i dokumentet. Taggen går alltid innanför head-element och brukar användas för att:</head></p>
-        </div>
-        <div class="list-group">
-            <ol>Teckenuppsättning</ol>
-            <ol>Nidbeskrivning</ol>
-            <ol>Nyckelord</ol>
-            <ol>Dokumentförfattare</ol>
-            <ol>Visningsinställningar</ol>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start responsive-1">
-            <h1>Responsive:</h1>
-        </div>
-        <div class="d-flex justify-content-start responsive-2">
-            <p class="class_ptxt">Responsive menas med att hemsidan ser bra ut på alla enheter. När den är responsive används bara CSS och Html. Det brukar ofta benämnas som "Responsiv hemsida" och det är alltså när den krymper, växer eller vidgas så att det ser bra ut.</p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start http-1">
-            <h1>Http:</h1>
-        </div>
-        <div class="d-flex justify-content-start http-2">
-            <p class="http_ptxt">Http står för "Hyper Text Transfer Protocol" och det handlar om att man ska kunna komma åt hemsidorna på nätet. Alltså förfrågningar och svar. Process:</p>
-        </div>
-        <div class="list-group">
-            <ol>1. En webbläsare skickar en http förfrågning på nätet</ol>
-            <ol>2. En webbserver tar emot förfrågan</ol>
-            <ol>3. Servern kör en applikation som jobbar med förfrågningen</ol>
-            <ol>4. Servern retunerar en Http svar i form av output till webbläsarn</ol>
-            <ol>5. Webbläsaren tar emot svaret</ol>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start https-1">
-            <h1>Https:</h1>
-        </div>
-        <div class="d-flex justify-content-start https-2">
-            <p class="https_ptxt">Https står för"Hyper Text Transfer Protocol Secure" och är i stort sätt samma sak som http. Med den stora skillnaden att det här sättet skyddas av TLS. Ett enkrypteringslager som gör det på så sätt säkrare. Kan refferas som HTTP över TLS. </p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start compressed_data-1">
-            <h1>Compressed data:</h1>
-        </div>
-        <div class="d-flex justify-content-start compressed_data-2">
-            <p class="compressed_data_ptxt">Compressed Data menas med datakomprimering eller datakompression. Det innebär att datan omkodas på ett sådant sätt att antalet informationsbärande enheter görs färre. Det vill man åstadkomma när man vill spara lagringsutrymmer eller få snabbare överföring. Ett exempel på detta är min filer.</p>
-        </div>
-        <hr>
-        <hr>
-        <div class="d-flex justify-content-start cdn-1">
-            <h1>CDN:</h1>
-        </div>
-        <div class="d-flex justify-content-start cdn-2">
-            <p class="cdn_ptxt">"Content Delivery Network"(CDN) är en central del i hur tjänster i form av ljud, bild, livestreaming och liknande tjänster kommer ut på internet till dess andvändare. I och med att tjänsterna idag är bandbreddsintensiva och måste komma till användaren med hög prestanda har cdn utvecklas. CDN-tekniken gör så att belastningen sprids upp på flera punkter och servrar, vilket gör att det funkar. </p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start local_bootstrap-1">
-            <h1>Local boostrap:</h1>
-        </div>
-        <div class="d-flex justify-content-start local_bootstrap-2">
-            <p class="local_bootstrap_ptxt">"Local Bootsrap" är ett bibliotek du kan ladda ner så du får det lokalt. Bibloteket innehåller en mängd kod som gör din sida repsonsive och finare. Ifall du därefter länkar rätt i Html kan du ovrridea med dina egna rader kod i css.</p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start jquery-1">
-            <h1>JQuery:</h1>
-        </div>
-        <div class="d-flex justify-content-start jquery-2">
-            <p class="jquery_ptxt">Är världens populäraste Javascript-bibliotek. Det har skapats för att göra det enklare att modifiera "element"(img, länkar, divar), hantera händelser, css-modifieringar och animationer. jQuery stödjer också plugins.</p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start flexbox-1">
-            <h1>Flexbox:</h1>
-        </div>
-        <div class="d-flex justify-content-start flexbox-2">
-            <p class="flexbox_ptxt">Är ett flexibelt sätt att hantera boxar(position och storlek), vilket är liknande till layout. Det är ett väldigt nytt sätt att dimensonera sidor med denna layout. Jag skulle säga att det är ett enklare sätt att lägga upp sidan på när man väl kan det.</p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start grid-1">
-            <h1>Vad menas med Grid?</h1>
-        </div>
-        <div class="d-flex justify-content grid-2">
-            <p class="grid_ptxt">För att förstå grid måste man förstå grunden. En grid är en yta som har delats in i ett nät av rutor som delas in av vertikala som horizontella linjer. Där linjerna korsas är alltså en ruta. De delas därefter in i två kategorier rader(horizontellt) och kolumner(vertikalt). Därefter bildar flera rutor ett område. Man använder Grid för att kunna positionera saker på sidan och det kom innan flexbox. Jag tycker att Kaxigt.com förklarar detta väldigt bra.
+   <head>
+      <!--Laddar först in bootstrap och sen min egen css-->
+      <link rel="stylesheet" href="bootstrap.css">
+      <!--Länk till bootstrap, får tillgång till all den kod först-->
+      <link rel="stylesheet" href="style.css">
+      <!--Länk till egen css som kommer efter bootstrap och gör att den kommer efter-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Webbbegrepp</title>
+   </head>
+   <body>
+      <div class="container-fluid text-monospace">
+      <!--Container fluid sätter på margin, width och padding. Addreserar en ny font-->
+      <div class="container-fluid align-items-center topstart" style="background-color: rgb(0, 255, 136);">
+         <!--använder samma container + aling för centrering + lägger till färg + adderar ord "topstart" så man kan manipulera i css-->
+         <h1>Webbutveckling 1</h1>
+         <!--Enkel tag för rubrik-->
+         <div class="container start" style="background-color: black;">
+            <!--Använder ytterligare en container som attribuerar width 540px + ändrar färg-->
+            <h1>Begreppsförklaring</h1>
+         </div>
+      </div>
+      <div class="d-flex justify-content:between">
+         <!--D-flex fixar flexbox(display flex) + justerar innehållet med space-between-->
+         <img src="html.jpg" class="mr-auto img-fluid toppic" alt="Responsive image, html bild"><!--Bild + margin + height och width + specifierar namn till css + beskriver vad det är-->
+         <img src="css.png" class="mr-auto img-fluid toppic" alt="Responsive image, css bilds">
+      </div>
+      <div class="d-flex justify-content-around html/css">
+         <!--Displayflex + justerar med spacearound + specifierar-->
+         <p class="html">Det är grundstrukturen för alla webbsidor du ser på nätet. Alltså layouten såsom styckindelning och rubriker. </p>
+         <!--P-tag för informationen + specifierar-->
+         <p class ="css">Det är det som gör att just din sidan ser annorlunda ut. Alltså typsnitt, storlek och hemsidans färger.</p>
+      </div>
+      <hr>
+      <!--break line för o byta ämne-->
+      <div class="d-flex justify-content-start element">
+         <!--Displayflex + Justerar till vänster + specifierar-->
+         <h1>Element:</h1>
+      </div>
+      <div class="d-flex justify-content-start element2">
+         <p class="element_ptxt">En del av ett Htmldokument, som börjar på en startag och slutar på en sluttag. Exempelvis h1,img,p.</p>
+         <img src="element.png" class="mr-auto img-fluid elementpng" alt="Respinsive image">
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start id">
+         <h1>ID:</h1>
+      </div>
+      <div class="d-flex justify-content-start id2">
+         <p class="id_ptxt">Specifierar ett unikt id för ett element och kan bara ha ett per element. Detta ID kan inte användas på flera element.Ett ID medför att du sedan kan åtkomma justeringar i css:n. Det måste också:</p>
+      </div>
+      <div class="list-group">
+         <!--Lista-->
+         <ol>Innehålla en bokstav</ol>
+         <!--Ordnad lista-->
+         <ol>Inga mellanslag</ol>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start class-1">
+         <h1>Class:</h1>
+      </div>
+      <div class="d-flex justify-content-start class-2">
+         <p class="class_ptxt">Klass atributet specifierar en eller flera "klassnamn" för ett element. Det används mestadels för att kunna länka med klassen i ett stylesheet. Men även för att få en struktur i din kodning. Därför är det viktigt att använda relevanta namn på klasserna.</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start meta-1">
+         <h1>Meta:</h1>
+      </div>
+      <div class="d-flex justify-content-start meta-2">
+         <p class="meta_ptxt">Meta taggen i Html är information om data i dokumentet. Taggen går alltid innanför head-element,alltså det längst upp i html:n, och brukar användas för:</p>
+      </div>
+      <div class="list-group">
+         <ol>Teckenuppsättning</ol>
+         <ol>Nidbeskrivning</ol>
+         <ol>Nyckelord</ol>
+         <ol>Dokumentförfattare</ol>
+         <ol>Visningsinställningar</ol>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start responsive-1">
+         <h1>Responsive:</h1>
+      </div>
+      <div class="d-flex justify-content-start responsive-2">
+         <p class="class_ptxt">Responsive menas med att hemsidan ser bra ut på alla enheter. När den är responsive används bara CSS och Html. Det brukar ofta benämnas som "Responsiv hemsida" och det är alltså när den krymper, växer eller vidgas så att det ser bra ut. Om inte detta andvänds ser sidan oproffesionell ut och är inte lika användar vänlig som den kunde ha varit.</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start http-1">
+         <h1>Http:</h1>
+      </div>
+      <div class="d-flex justify-content-start http-2">
+         <p class="http_ptxt">Http står för "Hyper Text Transfer Protocol" och det handlar om att man ska kunna komma åt hemsidorna på nätet. Alltså förfrågningar och svar. Process:</p>
+      </div>
+      <div class="list-group">
+         <ol>1. En webbläsare skickar en http förfrågning på nätet</ol>
+         <ol>2. En webbserver tar emot förfrågan</ol>
+         <ol>3. Servern kör en applikation som jobbar med förfrågningen</ol>
+         <ol>4. Servern retunerar en Http svar i form av output till webbläsarn</ol>
+         <ol>5. Webbläsaren tar emot svaret</ol>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start https-1">
+         <h1>Https:</h1>
+      </div>
+      <div class="d-flex justify-content-start https-2">
+         <p class="https_ptxt">Https står för"Hyper Text Transfer Protocol Secure" och är i stort sätt samma sak som http. Med den stora skillnaden att det här sättet skyddas av TLS. Ett enkrypteringslager som gör det på så sätt säkrare. Kan refereras som HTTP över TLS. </p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start compressed_data-1">
+         <h1>Compressed data:</h1>
+      </div>
+      <div class="d-flex justify-content-start compressed_data-2">
+         <p class="compressed_data_ptxt">Compressed Data menas med datakomprimering eller datakompression. Det innebär att datan omkodas på ett sådant sätt att antalet informationsbärande enheter görs färre. Det vill man åstadkomma när man vill spara lagringsutrymmer eller få snabbare överföring. Ett exempel på detta är min filer(minifierade filer).</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start cdn-1">
+         <h1>CDN:</h1>
+      </div>
+      <div class="d-flex justify-content-start cdn-2">
+         <p class="cdn_ptxt">"Content Delivery Network"(CDN) är en central del i hur tjänster i form av ljud, bild, livestreaming och liknande tjänster kommer ut på internet till dess andvändare. I och med att tjänsterna idag är bandbreddsintensiva och måste komma till användaren med hög prestanda har cdn utvecklas. CDN-tekniken gör så att belastningen sprids upp på flera punkter och servrar, vilket gör att det funkar. </p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start local_bootstrap-1">
+         <h1>Local boostrap:</h1>
+      </div>
+      <div class="d-flex justify-content-start local_bootstrap-2">
+         <p class="local_bootstrap_ptxt">"Local Bootsrap" är ett bibliotek du kan ladda ner så du får det lokalt. Bibloteket innehåller en mängd kod som gör din sida repsonsive och finare. Ifall du därefter länkar rätt i Html kan du overridea med dina egna rader kod i css. Helt enkelt hur du lätt kan få din sida att se riktigt bra och funktionell ut på ett få tal rader kod.</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start jquery-1">
+         <h1>JQuery:</h1>
+      </div>
+      <div class="d-flex justify-content-start jquery-2">
+         <p class="jquery_ptxt">Är världens populäraste Javascript-bibliotek. Det har skapats för att göra det enklare att modifiera "element"(img, länkar, divar), hantera händelser, css-modifieringar och animationer. jQuery stödjer också plugins. Bibloteket har förändrat hur miljontals människor skriver kod och med ett väldigt litet fotavtryck på bara 30kb. (minifierad och zippad) </p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start flexbox-1">
+         <h1>Flexbox:</h1>
+      </div>
+      <div class="d-flex justify-content-start flexbox-2">
+         <p class="flexbox_ptxt">Är ett flexibelt sätt att hantera boxar(position och storlek), vilket är liknande till layout. Det är ett väldigt nytt sätt att dimensonera sidor med denna layout. Jag skulle säga att det är ett enklare sätt att lägga upp sidan på när man väl kan det. Min enkla förklaringen är att man delar in sidan i boxar och justerar allt efter i vilken box man lägger, med justify-content , därmed kan sidan justera sig med alla i åtanke.</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start grid-1">
+         <h1>Vad menas med Grid?</h1>
+      </div>
+      <div class="d-flex justify-content grid-2">
+         <p class="grid_ptxt">För att förstå grid måste man förstå grunden. En grid är en yta som har delats in i ett nät av rutor som delas in av vertikala som horizontella linjer. Där linjerna korsas är alltså en ruta. De delas därefter in i två kategorier rader(horizontellt) och kolumner(vertikalt). Därefter bildar flera rutor ett område. Man använder Grid för att kunna positionera saker på sidan och det kom innan flexbox. Jag tycker att Kaxigt.com förklarar detta väldigt bra.
             <a href="https://kaxigt.com/css-grids/">Push me</a>
-            </p>
-        </div>
-        <hr>
-        <div class="d-flex justify-content-start code-snippets-1">
-            <h1>Code snippets:</h1>
-        </div>
-        <div class="d-flex justify-content-start code-snippets-2"> 
-            <p>En html snippet är en liten del av kod i html. Denna kod är populär bland utvecklare och därför återanvänds den. Sådan här kod underlättar och gör kodningen snabbare. Till exempel: </p>
-        </div>
-        <div class="d-flex justify-content-start snippetimgf">
-            <img src="html snippet.png" class="mr-auto img-fluid snippetimg" alt="Responsive image, exempel bild stsarting template">
-        </div>
-</body>
+         </p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-start code-snippets-1">
+         <h1>Code snippets:</h1>
+      </div>
+      <div class="d-flex justify-content-start code-snippets-2">
+         <p>En html snippet är en liten del av kod i html. Denna kod är populär bland utvecklare och därför har det införts att man återanvänder den genom att nå den med shortcuts. Sådan här kod underlättar och gör kodningen snabbare. Till exempel när man skriver utropstecken och får: </p>
+      </div>
+      <div class="d-flex justify-content-start snippetimgf">
+         <img src="html snippet.png" class="mr-auto img-fluid snippetimg" alt="Responsive image, exempel bild starting template">
+      </div>
+   </body>
 </html>
